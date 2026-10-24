@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  privacy-redaction-backend:
+    build: .
+    container_name: privacy-redaction-backend
+    restart: unless-stopped
+    ports:
+      - "8002:8002"
+    environment:
+      - PLATE_RECOGNIZER_TOKEN=efabb54d2f9443ee3efb020860584e07bb2e479c
+      - PLATE_RECOGNIZER_ENDPOINT=https://api.platerecognizer.com/v1/plate-reader/
+      - FACEPLUSPLUS_API_KEY=I9J_x0mJmi9w3D_crZmkpKXJs6pvuQbE
+      - FACEPLUSPLUS_API_SECRET=AXfXcLBzVa0FB0YdniFg5sIvQuGkaRmk
+      - FACEPLUSPLUS_ENDPOINT=https://api-us.faceplusplus.com/facepp/v3/detect
+      - DEFAULT_BLUR_RADIUS=25
+      - EXPAND_MARGIN_PERCENT=0.12
+      - FEATHER_EDGES=true
+      - STRIP_EXIF=true
+      - PORT=8002
+      - HOST=0.0.0.0
+      - CORS_ORIGINS=*
+    volumes:
+      - ./engine/redaction_cache.db:/app/engine/redaction_cache.db

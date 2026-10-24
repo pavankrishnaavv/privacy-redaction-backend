@@ -1,0 +1,177 @@
+[
+  {
+    "image_index": 1,
+    "filename": "street_rain_motorcycle.jpg",
+    "input_path": "E:\\New folder\\24H\\privacy-redaction-backend\\tests\\sample_images\\street_rain_motorcycle.jpg",
+    "output_path": "E:\\New folder\\24H\\privacy-redaction-backend\\tests\\sample_images\\redacted_outputs\\redacted_street_rain_motorcycle.png",
+    "res": {
+      "success": true,
+      "original_sha256": "de29fcb33eb821db2609d4fdc43ec564adbe6502b81da0bd6a4fbcc762eab2c0",
+      "redacted_sha256": "a0012dca1fac746ca140f866e24ccd26dfc210b6134c114e1e5e7c522ac9c5c4",
+      "image_size": {
+        "width": 1024,
+        "height": 558
+      },
+      "detections": {
+        "faces_count": 3,
+        "plates_count": 1,
+        "faces": [
+          {
+            "type": "face",
+            "face_token": "c318b9074b66f2af6683344b76404562",
+            "gender": "Male",
+            "age": 32,
+            "box": {
+              "xmin": 557,
+              "ymin": 118,
+              "xmax": 605,
+              "ymax": 166
+            }
+          },
+          {
+            "type": "face",
+            "face_token": "97781228fd3dce7962ee5b5ff5081e05",
+            "gender": "Male",
+            "age": 31,
+            "box": {
+              "xmin": 75,
+              "ymin": 149,
+              "xmax": 94,
+              "ymax": 168
+            }
+          },
+          {
+            "type": "face",
+            "face_token": "b35e1d47cc709ad67d04439863aed223",
+            "gender": "Male",
+            "age": 32,
+            "box": {
+              "xmin": 250,
+              "ymin": 158,
+              "xmax": 268,
+              "ymax": 176
+            }
+          }
+        ],
+        "plates": [
+          {
+            "type": "license_plate",
+            "plate_text": "DL14SV7890",
+            "confidence": 0.995,
+            "vehicle_type": "Sedan",
+            "vehicle_confidence": 0.478,
+            "box": {
+              "xmin": 387,
+              "ymin": 347,
+              "xmax": 470,
+              "ymax": 380
+            }
+          }
+        ]
+      },
+      "redaction_parameters": {
+        "redacted_faces": true,
+        "redacted_plates": true,
+        "blur_radius_applied": "adaptive (35% scale)",
+        "margin_expanded_pct": 0.12,
+        "feather_edges": true,
+        "exif_purged": true,
+        "output_format": "PNG"
+      },
+      "telemetry": {
+        "detection_latency_ms": 2075.45,
+        "blur_latency_ms": 1.27,
+        "total_pipeline_ms": 2206.49,
+        "cache_hit": false
+      },
+      "output_path": "E:\\New folder\\24H\\privacy-redaction-backend\\tests\\sample_images\\redacted_outputs\\redacted_street_rain_motorcycle.png"
+    }
+  },
+  {
+    "image_index": 2,
+    "filename": "portrait_glasses.jpg",
+    "input_path": "E:\\New folder\\24H\\privacy-redaction-backend\\tests\\sample_images\\portrait_glasses.jpg",
+    "output_path": "E:\\New folder\\24H\\privacy-redaction-backend\\tests\\sample_images\\redacted_outputs\\redacted_portrait_glasses.png",
+    "res": {
+      "success": true,
+      "original_sha256": "8f35f1204ec038f5875cd4ebca6254f9f5174f11924e7d5af7ca405fadf094a1",
+      "redacted_sha256": "360b7ba65a50ec7554c55a2197ab5a421ba35a3eb612e09cf013b0736fd9c14e",
+      "image_size": {
+        "width": 960,
+        "height": 720
+      },
+      "detections": {
+        "faces_count": 1,
+        "plates_count": 0,
+        "faces": [
+          {
+            "type": "face",
+            "face_token": "fd18376e974ecf475cdddaab9751dc21",
+            "gender": "Male",
+            "age": 19,
+            "box": {
+              "xmin": 325,
+              "ymin": 253,
+              "xmax": 589,
+              "ymax": 517
+            }
+          }
+        ],
+        "plates": []
+      },
+      "redaction_parameters": {
+        "redacted_faces": true,
+        "redacted_plates": true,
+        "blur_radius_applied": "adaptive (35% scale)",
+        "margin_expanded_pct": 0.12,
+        "feather_edges": true,
+        "exif_purged": true,
+        "output_format": "PNG"
+      },
+      "telemetry": {
+        "detection_latency_ms": 1827.22,
+        "blur_latency_ms": 8.46,
+        "total_pipeline_ms": 1976.82,
+        "cache_hit": false
+      },
+      "output_path": "E:\\New folder\\24H\\privacy-redaction-backend\\tests\\sample_images\\redacted_outputs\\redacted_portrait_glasses.png"
+    }
+  },
+  {
+    "image_index": 3,
+    "filename": "night_highway_temple.jpg",
+    "input_path": "E:\\New folder\\24H\\privacy-redaction-backend\\tests\\sample_images\\night_highway_temple.jpg",
+    "output_path": "E:\\New folder\\24H\\privacy-redaction-backend\\tests\\sample_images\\redacted_outputs\\redacted_night_highway_temple.png",
+    "res": {
+      "success": true,
+      "original_sha256": "421765a69eb8b4778880c4bf7ad19d67434b49e118901fc2d6f5153a24809b91",
+      "redacted_sha256": "fd90f8ee8bd8f61f2bc9cc5ba1cb6b5bb6ef80febccf33db1d0e11098fffe418",
+      "image_size": {
+        "width": 1024,
+        "height": 768
+      },
+      "detections": {
+        "faces_count": 0,
+        "plates_count": 0,
+        "faces": [],
+        "plates": []
+      },
+      "redaction_parameters": {
+        "redacted_faces": true,
+        "redacted_plates": true,
+        "blur_radius_applied": "adaptive (35% scale)",
+        "margin_expanded_pct": 0.12,
+        "feather_edges": true,
+        "exif_purged": true,
+        "output_format": "PNG"
+      },
+      "telemetry": {
+        "detection_latency_ms": 1969.72,
+        "blur_latency_ms": 0.56,
+        "total_pipeline_ms": 2107.35,
+        "cache_hit": false
+      },
+      "output_path": "E:\\New folder\\24H\\privacy-redaction-backend\\tests\\sample_images\\redacted_outputs\\redacted_night_highway_temple.png"
+    }
+  }
+]
